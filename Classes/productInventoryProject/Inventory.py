@@ -24,7 +24,7 @@ class Inventory(object):
 	@property
         def value(self):
                 return sum([i.price for i in self.products])
-
+"""
 apple = Product('apple', 3,3)
 banana = Product('banana', 4,4)
 
@@ -36,3 +36,4 @@ print 'value at the start is: %s'  %(bazaar.value)
 grape = Product('grape',5,5)
 bazaar.add_product(grape)
 print 'value after adding grape is: %s' %(bazaar.value)
+"""
