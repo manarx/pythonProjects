@@ -15,10 +15,15 @@ class Product(object):
 
 	@classmethod
 	def get_instances(cls):
+#		print 'hey'
+		for i in range(3):
+			print i
+		"""
 		for inst_ref in cls.__instances__[cls]:
 			inst = inst_ref()
 			if inst is not None:
-				print inst
+				print 'here we go: %s' %(inst)
+		"""
 
 	@staticmethod
 	def createNew():

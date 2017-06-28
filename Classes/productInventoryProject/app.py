@@ -25,7 +25,7 @@ def main():
 				print '\t%s is not a valid option' %choice
 				choice = raw_input(intro)
 			choice = int(choice)
-			print 'Integer: %s' %choice
+#			print 'Integer: %s' %choice
 		except Exception as e:
 			print e.message
 	

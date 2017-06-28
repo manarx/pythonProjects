@@ -24,6 +24,15 @@ class Inventory(object):
 	@property
         def value(self):
                 return sum([i.price for i in self.products])
+
+	def __str__(self):
+		return """
+			\t--Inventory--\n
+			\t value: \t %s \n
+			\t products: \n
+			\t \t %s
+		""" %(self.value, '\n'.join(self.products))
+		
 """
 apple = Product('apple', 3,3)
 banana = Product('banana', 4,4)
